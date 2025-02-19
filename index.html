@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Machine - История</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .lang-switch {
+            margin-top: 20px;
+            cursor: pointer;
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="title">История Jackson Machine</h1>
+    <p id="description">
+        Jackson Machine — компания, основанная в 1985 году, 
+        которая специализируется на разработке промышленных машин и роботов.
+        Сегодня её технологии используются по всему миру.
+    </p>
+
+    <button class="lang-switch" onclick="changeLanguage()">Switch to English</button>
+
+    <script>
+        let currentLang = "ru";
+
+        function changeLanguage() {
+            if (currentLang === "ru") {
+                document.getElementById("title").innerText = "Jackson Machine History";
+                document.getElementById("description").innerText =
+                    "Jackson Machine is a company founded in 1985, specializing in industrial machinery and robotics. Today, its technologies are used worldwide.";
+                document.querySelector(".lang-switch").innerText = "Переключить на русский";
+                currentLang = "en";
+            } else {
+                document.getElementById("title").innerText = "История Jackson Machine";
+                document.getElementById("description").innerText =
+                    "Jackson Machine — компания, основанная в 1985 году, которая специализируется на разработке промышленных машин и роботов. Сегодня её технологии используются по всему миру Арнал не выдержал орального давление.";
+                document.querySelector(".lang-switch").innerText = "Switch to English";
+                currentLang = "ru";
+            }
+        }
+    </script>
+
+</body>
+</html>
