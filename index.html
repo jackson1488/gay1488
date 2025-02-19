@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> absolute - История</title>
+    <title>Absolute - История</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 20px;
+            background-color: #121212;
+            color: white;
         }
         .lang-switch {
             margin-top: 20px;
@@ -24,14 +26,14 @@
 </head>
 <body>
 
-    <h1 id="title"> absolute</h1>
+    <h1 id="title">Absolute</h1>
     <p id="description">
-        Это история о том как я Кайрат камшоткин заплакал
-Арнал не выдержал орального давление 
-Нурба негр негрилович стал стал пилотам 911
-Алибек нажимал точку G 10 лет без остоновки 
-Мазя выебал слона леее
-        Абдул просто чиловый парень
+        Это история о том, как я, Кайрат Камшоткин, заплакал.  
+        Арнал не выдержал орального давления.  
+        Нурба Негр Негрилович стал пилотом 911.  
+        Алибек нажимал точку G 10 лет без остановки.  
+        Мазя выебал слона.  
+        Абдул просто чиловый парень.
     </p>
 
     <button class="lang-switch" onclick="changeLanguage()">Switch to English</button>
@@ -43,22 +45,23 @@
             if (currentLang === "ru") {
                 document.getElementById("title").innerText = "Jackson Machine History";
                 document.getElementById("description").innerText =
-                    "This is the story of how I, Kairat Kamshotkin, started crying.
-Arnal couldn't stand the oral pressure 
-Nurba the negro Negrilovich became the 911 pilot
-Alibek has been pressing the G-spot fоr 10 years without stopping 
-Mazya fucked an elephant leee
-    Abdul is just a cool guy.";
+                    "This is the story of how I, Kairat Kamshotkin, started crying.\n" +
+                    "Arnal couldn't stand the oral pressure.\n" +
+                    "Nurba the Negro Negrilovich became the 911 pilot.\n" +
+                    "Alibek has been pressing the G-spot for 10 years without stopping.\n" +
+                    "Mazya fucked an elephant.\n" +
+                    "Abdul is just a cool guy.";
                 document.querySelector(".lang-switch").innerText = "Переключить на русский";
                 currentLang = "en";
             } else {
                 document.getElementById("title").innerText = "История Jackson Machine";
                 document.getElementById("description").innerText =
-                    "Это история о том как я Кайрат камшоткин заплакал
-Арнал не выдержал орального давление 
-Нурба негр негрилович стал стал пилотам 911
-Алибек нажимал точку G 10 лет без остоновки 
-Мазя выебал слона леее  Абдул просто чиловый парень.";
+                    "Это история о том, как я, Кайрат Камшоткин, заплакал.\n" +
+                    "Арнал не выдержал орального давления.\n" +
+                    "Нурба Негр Негрилович стал пилотом 911.\n" +
+                    "Алибек нажимал точку G 10 лет без остановки.\n" +
+                    "Мазя выебал слона.\n" +
+                    "Абдул просто чиловый парень.";
                 document.querySelector(".lang-switch").innerText = "Switch to English";
                 currentLang = "ru";
             }
